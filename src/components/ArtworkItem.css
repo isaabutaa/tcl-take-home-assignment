@@ -1,0 +1,24 @@
+.item-container {
+	border: solid black 1px;
+	padding: 1rem;
+	margin: 1rem 0;
+}
+
+.title {
+	font-weight: bold;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+button {
+	padding: 1rem;
+}
+
+button:hover {
+	background-color: royalblue;
+	color: #fff;
+	cursor: pointer;
+}

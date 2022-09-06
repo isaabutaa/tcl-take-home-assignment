@@ -9,8 +9,10 @@ export function SearchForm({ onSearchSubmit }) {
 		setQuery(evt.target.value);
 	}
 
-	function handleFormSubmit() {
+	function handleFormSubmit(event) {
+		event.preventDefault();
 		onSearchSubmit(query);
+		setQuery('');
 	}
 
 	return (
@@ -23,6 +25,7 @@ export function SearchForm({ onSearchSubmit }) {
 				id="search-field"
 				inputMode="search"
 				name="query"
+				placeholder="search term"
 				type="text"
 				value={query}
 				onChange={handleInputChange}

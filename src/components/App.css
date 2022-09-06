@@ -11,6 +11,11 @@
 	text-align: center;
 }
 
+.App > h2 {
+	font-weight: bold;
+	text-align: center;
+}
+
 .App > .Footer {
 	margin-top: auto;
 }
